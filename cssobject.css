@@ -1,0 +1,483 @@
+*{
+-webkit-box-sizeing:border-box;
+-o-box-sizeing:border-box;
+-moz-box-sizeing:border-box;
+-box-sizeing:border-box;
+}
+
+.star{
+background-color:#fff5ee;
+font-size: 20px
+
+}
+.aa{
+/*  الغاء الخط في ال link*/
+text-decoration:none;}
+
+
+      /* لعمل مؤاثرات متحركه*/
+
+   /*   snak*/
+   .snak{
+     direction: ltr;
+   width:300px;
+   height:40px;
+   margin:20px auto;
+   position:relative;
+   }
+   .snak span{
+   display:block;
+   position:absolute;
+   bottom:0;
+   height:40px;
+   width:40px;
+   border-radius:200px;
+   background-color:#3498db;
+   opacity:.5s;
+   animation:snake 1.5s infinite ease-in-out;
+ }
+   .snak span:nth-of-type(2) {
+   left:35px;
+   -webkit-animation-delay:.2s;
+   animation-delay:.2s;
+   }
+   .snak span:nth-of-type(3) {
+   left:65px;
+   -webkit-animation-delay:.4s;
+   animation-delay:.4s;
+   }
+   .snak span:nth-of-type(4) {
+   left:95px;
+   -webkit-animation-delay:.6s;
+   animation-delay:.6s;
+   }
+   .snak span:nth-of-type(5) {
+   left:125px;
+   -webkit-animation-delay:.8s;
+   animation-delay:.8s;
+   }
+   .snak span:nth-of-type(6) {
+   left:155px;
+   -webkit-animation-delay:1s;
+   animation-delay:1s;
+   }
+   .snak span:last-of-type(7) {
+   left:185px;
+   -webkit-animation-delay:1.0s;
+   animation-delay:1.0s;
+   }
+   .snak  span:last-of-type {
+   left:185px;
+   -webkit-animation-delay:1.2s;
+   animation-delay:1.2s;
+   }
+
+@-webkit-keyframes snake{
+0%{
+opacity:.3;
+transform:translate(0);
+box-shadow:0 0 3px rgba(0, 0,0,0.1);
+}
+25%{
+opacity:1;
+transform:translate(-15px);
+box-shadow:0 20px 3px rgba(0, 0,0,0.05);
+}
+100%{
+opacity:.3;
+transform:translatey(0);
+background-color:#737;
+box-shadow:0 0 3px rgba(0, 0,0,0.1);
+}
+}
+@keyframes snake{
+0%{
+opacity:.3;
+transform:translate(0);
+box-shadow:0 0 3px rgba(0, 0,0,0.1);
+}
+25%{
+opacity:1;
+transform:translate(-15px);
+box-shadow:0 20px 3px rgba(0, 0,0,0.05);
+}
+100%{
+opacity:.3;
+transform:translatey(0);
+background-color:#737;
+box-shadow:0 0 3px rgba(0, 0,0,0.1);
+}
+}
+
+
+
+
+/*لالغا ترقيم القوائم*/
+ul{ list-style-type:none;}
+
+
+/* Navbar styles */
+.navbar{
+  /* لاينزل النص يكمل الا النهيه*/
+  white-space:nowrap;
+/* اتجاه الكلام  من اليمين الا اليسار*/
+    direction:rtl;
+  background-color: #103;
+  overflow: hidden; /* Hidden over contact */
+  border-radius: 10px;
+  box-shadow: 0 8px 10px -6px rgb(0 0 0 / 50%);
+}
+/* Links styles inside navbar */
+.navbar a{
+ 
+  color: #FFFFFF; /* Primary color of text */
+  text-decoration: none;
+  font-size: 20px;
+  
+  text-align: center;
+  padding: 14px 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+  
+}
+
+.navbar a:hover{
+  background-color: rgb(154, 255, 22);
+  color: #000000;
+ 
+}
+.navbar a.active{
+  background-color: #1302ff;    
+}
+.navbar a.active:hover{
+  background-color: rgb(150, 177, 0);
+  color: #fff;}
+/* ent nav */
+
+
+
+.linka{
+  text-decoration: none;
+}
+.immgg{
+  margin:20px;
+  width: 70%;
+  height: 400px;
+}
+
+
+/* لالغاء خط ال  link*/
+a[title="link"]{text-decoration:noe;}
+/*  لعمل نص ثابت على الشاشه*/
+dialog{
+position:fixed;
+font-weight:bolder;
+left:0;
+top:0;
+text-align:center;}
+.compu{
+background-color:#ddd;
+direction:rtl;
+border: 1px solid #000;}
+a[title="linking"]{text-decoration:none;}
+
+.cent{
+text-align: center;
+}
+/*  خاص بعمل اطار */
+.img-fig{
+background-color:#fff;
+padding: 10px;
+margin-top:10px;
+border:10px solid #778899;
+text-align:center
+}
+ /* لجعل الصفحة حيويه*/
+ .timfun{
+ width:200px;
+ text-align:center;
+ }
+ .timfun p a{
+   color:#000;
+ }
+ .timfun p[title="f"]{
+ /*  لعمل اطارات دائري */
+ -webkit-border-radius:10px 70px 10px 70px;
+ border-radius:10px 70px 10px 70px;
+ background-color:rgb(138, 171, 241);
+ padding:10px;
+ color:#000;
+ width:150px;
+  /* لتزويد العناصر بحركات حيويه*/
+ transition:width 3.9s ,background-color 3.5s;
+ /*  تتعملم مع الخواص فقط*/
+ transition-property:width ,background-color;
+ /* تتعامل مع وقت الانتقال */
+ transition-duration:3.3s,5.3s;
+ }
+ /* transition-timing-function  -الانتقال من عنصر الا عنصر بواصة خمس خواص تبداء سريعه اوبطيئه اوتنتهي سريعه او بطيئه*/
+ .timfun p:first-of-type { 
+ /* ease:  تبداء وتنتهي تدريجين*/
+ transition-timing-function:ease;
+ margin:10px auto;
+ /* transitiob-delay :  تعمل على تغير وقت الانتقال متى يتم الانتقتل */
+ transition-delay:.5s;
+ }
+ .timfun p:nth-of-type(2) {
+ /*   linear:  يبداء وينتهي في الحال لاكن يمشي بمعدل ثابت*/
+ transition-timing-function:linear;
+ margin:10px auto;
+ /* transitiob-delay :  تعمل على تغير وقت الانتقال متى يتم الانتقتل */
+ transition-delay:2s;
+ }
+ .timfun p:nth-of-type(3) {
+ /*  ease-in:    تبداء تدريجين ويتوقف في الحال*/
+ transition-timing-function:ease-in; 
+ margin:10px auto;
+ /* transitiob-delay :  تعمل على تغير وقت الانتقال متى يتم الانتقتل */
+ transition-delay:1s;
+ }
+ .timfun p:nth-of-type(4) { 
+ /*ease-out:   تبداء بسرعه وتنسهي بسرعه*/
+ transition-timing-function:ease-out;
+ margin:10px auto;
+ /* transitiob-delay :  تعمل على تغير وقت الانتقال متى يتم الانتقتل */
+ transition-delay:1.5s;
+ }
+ .timfun p:nth-of-type(5) 
+ {
+ transition-timing-function:ease-in-out;
+ margin:10px auto;
+ transition-delay:.5s;
+ }
+ .timfun p:nth-of-type(6) {
+ transition-timing-function:ease-in-out;
+ margin:10px auto;
+ transition-delay:2s;
+ }
+ .timfun p:last-of-type  {
+ /*   ease-in-out : تبداء وتنتهي تدريجين تجمه خواص ال */
+ transition-timing-function:ease-in-out;
+ margin:10px auto;
+ /* transitiob-delay :  تعمل على تغير وقت الانتقال متى يتم الانتقتل */
+ transition-delay:30ms;
+ }  
+ .timfun :hover {
+ width:100px;
+ color:#fff;
+ border:3px solid #65df49;
+ height:50px;
+ background-color:#00f;
+ }
+
+ .fott{
+   background:rgb(100, 145, 145)
+ }
+
+
+
+
+/*  صفحة المستويات*/
+.level{
+  font-size:20px;
+background-color:#e0ffff
+}
+
+.tab{
+border:2px solid #000;
+text-align:center;
+width:900px;
+height:300px;
+background-color:tan;
+}
+.tab .td{
+background-color:cyan
+}
+.ul{ list-style-type:none;}
+.nav{
+width:600px;
+background-color:#eee;
+height:3px;
+/* لاينزل النص يكمل الا النهيه*/
+white-space:nowrap;
+/*لعمل شريط تمرير*/
+overflow:scroll;
+/* اتجاه الكلام  من اليمين الا اليسار*/
+direction:rtl;}
+.nav .ul li{
+/* لكتابه دخط مستقيم */
+display:inline;
+/* النص لا ينزل سطر يكمل الا النهايه*/
+white-space:nowrap;}
+/* وضع علامه بين كل فقره واخراء*/
+ .nav .ul li:after{ content:" ""|"" ";}
+
+table td{
+text-align:center;}
+
+
+
+
+
+/*  صفحة الدكتور*/
+
+.docto{
+  font-size:20px;
+background-color:#e6e6fa;
+
+}
+ center .hdo{
+height:40px;
+background-color:#737;
+}
+.a1{
+color:#937;
+text-align:center;
+text-decoration:underline;
+}
+.ap{
+color:#663399;
+text-indent:5px;
+direction:rtl;
+}
+.au{color:#663399;
+direction:rtl;
+list-style-type:disk;
+font-style:italice;
+}
+.ah{
+color:#7b68ee;
+text-decoration:underline;
+}
+.ao{ color:#2f4f4f}
+
+
+
+
+
+/*   صفحة المجالات الخاصه بلقسم*/
+
+.depart{
+  text-align:right;
+  font-size:20px;
+  color:#110202;
+  
+  background-color:#eee8f0;
+  }
+center .dep{
+height:70px;
+
+background-color:#adff2f;
+}
+
+.depart h2{  
+color:#ffa500;
+}
+.depart h3{
+color:#bcbf8f;
+}
+
+.depart ul li{
+list-style-type:disk;
+color:#4682b4
+}
+
+
+
+
+
+
+
+/*  الوظائف */
+center .jo{
+  font-size: 40px;
+height:70px;
+background-color:#880;
+}
+.job{
+  font-size: 20px;
+ direction:rtl;
+background-color:#b0b0e6;
+text-align:right
+}
+.job h3{
+  text-align: center;
+  padding-top:10px;
+font-size: 20px;
+color:#000080
+}
+.job li h3{
+  text-align: right;
+ font-size: 30px;
+}
+
+
+
+ /*  صفحة المعلومات الاضافيه */
+ 
+ .other-page{
+  font-size:25px;
+ direction:rtl;
+ text-align:right;
+ background-color:#caffb5;
+ }
+ 
+ .other-page .textt{
+   margin-top:20px;
+   color:rgb(163, 23, 77);
+
+ }
+  .other-page h5{  
+ color:#00f;
+ }
+  .other-page h4{
+ color:#f00;
+ }
+ 
+ .other-page ul li{
+ list-style-type:disc;
+ }
+
+ .other-page img{
+   margin:20px;
+  width: 70%;
+  height: 400px;
+border: solid #000;
+}
+
+.other-page .bd{
+border-radius: 100%;
+
+display:inline;
+background-color:#1e90ff
+}
+
+.other-page  .h4t{
+color:#000;
+display:inline;
+}
+ .other-page .for .in1{
+width:340px;
+height:40px
+} 
+.other-page .for .in2{
+width:340px;
+height:40px
+} 
+.other-page  .for .in3 {
+width:340px;
+height:200px
+}
+.other-page .for .bot{
+background-color:#1e90ff
+}
+
+
+
+
+footer{
+background-color:#ccc;
+color:#f00;
+text-align:center;
+padding:8px
+}
